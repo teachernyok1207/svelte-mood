@@ -40,7 +40,7 @@
     <Header />
 {/if}
 <Container>
-    <input type="text" bind:value={name}>
+    <input type="text" placeholder="(Type of Your Name)" bind:value={name}>
     <h1>{name}, {smileySays}</h1>
     <Face {happyScore} size={storyIndex+1} />
     <Buttons {buttons} on:click={clickHandler} />
